@@ -1,0 +1,384 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "eventType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "eventLocation",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "_eventLocation",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_eventType",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "dynamicMetric",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "trustLevel",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "securityStatus",
+						"type": "uint256"
+					}
+				],
+				"name": "credibilityGrade",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "credibilityMetrics",
+				"outputs": [
+					{
+						"internalType": "contract CredibilityMetrics",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "distance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "noOfZonesAffected",
+						"type": "uint256"
+					}
+				],
+				"name": "dynamicTrustCal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "eventType",
+						"type": "string"
+					}
+				],
+				"name": "eventSpecificTrustCalc",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEventCredibility",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "distance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "noOfZonesAffected",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sourceTrustLevel",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "vehicleStatus",
+						"type": "string"
+					}
+				],
+				"name": "getMessageCredibility",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRsu",
+				"outputs": [
+					{
+						"internalType": "contract RSU",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "vehicleStatus",
+						"type": "string"
+					}
+				],
+				"name": "getSecurityStatus",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "uuid",
+						"type": "uint256"
+					}
+				],
+				"name": "getTrust",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "message",
+				"outputs": [
+					{
+						"internalType": "contract Message",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rsu",
+				"outputs": [
+					{
+						"internalType": "contract RSU",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "sourceID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "distance",
+						"type": "uint256"
+					}
+				],
+				"name": "setEvent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "add",
+						"type": "address"
+					}
+				],
+				"name": "setSourceTrust",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sourceTrust",
+				"outputs": [
+					{
+						"internalType": "contract SourceTrust",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "trustLevel",
+						"type": "uint256"
+					}
+				],
+				"name": "trustLevelCalc",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/trust_calculation.sol": "CredibilityMetrics"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Message.sol": {
+			"keccak256": "0x421526cbdd1b63d3324ba9e77b2071c25526d89ac4aa126659354b228cceea29",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://ddd0ac23ae7b03c2d671af93cb0d5255178c7f971c3d8fb76ad281ce4423a821",
+				"dweb:/ipfs/Qmb6PCmREjwwiEf2Bzgqyn5ECTtQJTa4gyf9p7qzECThUT"
+			]
+		},
+		"contracts/RSU.sol": {
+			"keccak256": "0x516e5bba32ccbd28cbb3ba89658cd54777edf13b41d35cd27d63c3e19ae0c606",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://9ef03806cda2a4971ac0a2d9fe9480b22808eb2cbdae5e1388208d6126d41c68",
+				"dweb:/ipfs/QmRvqLTge5aS8BK5JAjSManaC8vZdfTKDEjbHZt1BLARqw"
+			]
+		},
+		"contracts/trust_calculation.sol": {
+			"keccak256": "0x568c1e683ef40aa1cb3aacc843ae9c97e3db6398a0bc4da39e2cfb1878ae23d3",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://0424055949f9c67cc69b2f45fddeebbe97f82e00f1b723aeb131a696fa44da80",
+				"dweb:/ipfs/QmTKADb9wwuFNobBtDf79QJmLNMymsf8FFjQM5foD4vD2Z"
+			]
+		},
+		"contracts/trust_store.sol": {
+			"keccak256": "0x3b5d7ad984a351911e17cfabe2dd838f71e45d30935c3bc0a3e93dd5412cf170",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://dd50ce4dc6c2f6d7ca3d6940cb90c6b800801a38afdeb5fe2019e3b38cf06f30",
+				"dweb:/ipfs/QmSjeTheCR2skq6xWCgVFvGPJieg5kWQCPapd6oXUxYNH1"
+			]
+		}
+	},
+	"version": 1
+}
